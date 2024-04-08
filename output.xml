@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.7 on win32)" generated="2024-04-08T21:30:54.308016" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="C:\Users\Microcom\Desktop\RobotForm\form.robot">
+<test id="s1-t1" name="Successfully signed up" line="26">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:54.562136" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>http://localhost:5173/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T21:30:54.562136" elapsed="2.081148"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:54.562136" elapsed="2.081148"/>
+</kw>
+<kw name="Input TH Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:56.643284" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
+<arg>id=nameTitleTha</arg>
+<arg>${VALID_NAME_TH_1}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T21:30:56.643284" elapsed="0.072551"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:56.715835" level="INFO">Typing text 'สุภาณี' into text field 'id=firstnameTha'.</msg>
+<arg>id=firstnameTha</arg>
+<arg>${VALID_FIRSTNAME_TH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:56.715835" elapsed="0.162632"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:56.878467" level="INFO">Typing text 'รังสิรัตน์' into text field 'id=lastnameTha'.</msg>
+<arg>id=lastnameTha</arg>
+<arg>${VALID_LASTNAME_TH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:56.878467" elapsed="0.137367"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:56.643284" elapsed="0.372550"/>
+</kw>
+<kw name="Input EN Information">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.015834" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
+<arg>id=nameTitleEng</arg>
+<arg>${VALID_NAME_EN_1}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.015834" elapsed="0.056937"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.072953" level="INFO">Typing text 'Supanee' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>${VALID_FIRSTNAME_EN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.072953" elapsed="0.121182"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.194135" level="INFO">Typing text 'Rungsirat' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>${VALID_LASTNAME_EN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.194135" elapsed="0.154934"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:57.015834" elapsed="0.333235"/>
+</kw>
+<kw name="Input Birthday">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.349069" level="INFO">Selecting options from selection list 'id=birthDate' by value 27.</msg>
+<arg>id=birthDate</arg>
+<arg>${DAY}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.349069" elapsed="0.105383"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.454452" level="INFO">Selecting options from selection list 'id=birthMonth' by label มิถุนายน.</msg>
+<arg>id=birthMonth</arg>
+<arg>${MONTH}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.454452" elapsed="0.089846"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.544298" level="INFO">Selecting options from selection list 'id=birthYear' by label 2003.</msg>
+<arg>id=birthYear</arg>
+<arg>${YEAR}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.544298" elapsed="0.089917"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:57.349069" elapsed="0.285146"/>
+</kw>
+<kw name="Input ID Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.634215" level="INFO">Typing text '2546257894125' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>${VALID_ID_CARD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.634215" elapsed="0.177866"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:57.634215" elapsed="0.177866"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.812081" level="INFO">Typing text 'PasswordXd555' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.812081" elapsed="0.145607"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:57.812081" elapsed="0.145607"/>
+</kw>
+<kw name="Input Phone Number">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:57.965840" level="INFO">Typing text '0986574123' into text field 'id=mobile'.</msg>
+<arg>id=mobile</arg>
+<arg>${VALID_PHONE_NUMBER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:57.965840" elapsed="0.137423"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:57.965840" elapsed="0.137423"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:58.103263" level="INFO">Typing text 'Samind2@webmail.npru.ac.th' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>${VALID_EMAIL_WEBMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:30:58.103263" elapsed="0.196869"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:58.103263" elapsed="0.196869"/>
+</kw>
+<kw name="Input Checkbox">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:58.300132" level="INFO">Executing JavaScript:
+document.getElementById('accept').click()
+Without any arguments.</msg>
+<msg time="2024-04-08T21:30:58.518795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T21:30:58.518795" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74E957072+63090]
+	(No symbol) [0x00007FF74E8C2CC2]
+	(No symbol) [0x00007FF74E75EC65]
+	(No symbol) [0x00007FF74E763D21]
+	(No symbol) [0x00007FF74E766462]
+	(No symbol) [0x00007FF74E7E4062]
+	(No symbol) [0x00007FF74E7C6FDA]
+	(No symbol) [0x00007FF74E7E3412]
+	(No symbol) [0x00007FF74E7C6D83]
+	(No symbol) [0x00007FF74E7983A8]
+	(No symbol) [0x00007FF74E799441]
+	GetHandleVerifier [0x00007FF74ED525CD+4238285]
+	GetHandleVerifier [0x00007FF74ED8F72D+4488493]
+	GetHandleVerifier [0x00007FF74ED87A0F+4456463]
+	GetHandleVerifier [0x00007FF74EA305B6+953270]
+	(No symbol) [0x00007FF74E8CE58F]
+	(No symbol) [0x00007FF74E8C9264]
+	(No symbol) [0x00007FF74E8C939B]
+	(No symbol) [0x00007FF74E8B9BD4]
+	BaseThreadInitThunk [0x00007FFE9935257D+29]
+	RtlUserThreadStart [0x00007FFE9A64AA58+40]
+</msg>
+<arg>document.getElementById('accept').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2024-04-08T21:30:58.300132" elapsed="0.272252">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74E957072+63090]
+	(No symbol) [0x00007FF74E8C2CC2]
+	(No symbol) [0x00007FF74E75EC65]
+	(No symbol) [0x00007FF74E763D21]
+	(No symbol) [0x00007FF74E766462]
+	(No symbol) [0x00007FF74E7E4062]
+	(No symbol) [0x00007FF74E7C6FDA]
+	(No symbol) [0x00007FF74E7E3412]
+	(No symbol) [0x00007FF74E7C6D83]
+	(No symbol) [0x00007FF74E7983A8]
+	(No symbol) [0x00007FF74E799441]
+	GetHandleVerifier [0x00007FF74ED525CD+4238285]
+	GetHandleVerifier [0x00007FF74ED8F72D+4488493]
+	GetHandleVerifier [0x00007FF74ED87A0F+4456463]
+	GetHandleVerifier [0x00007FF74EA305B6+953270]
+	(No symbol) [0x00007FF74E8CE58F]
+	(No symbol) [0x00007FF74E8C9264]
+	(No symbol) [0x00007FF74E8C939B]
+	(No symbol) [0x00007FF74E8B9BD4]
+	BaseThreadInitThunk [0x00007FFE9935257D+29]
+	RtlUserThreadStart [0x00007FFE9A64AA58+40]
+</status>
+</kw>
+<status status="FAIL" start="2024-04-08T21:30:58.300132" elapsed="0.272252">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74E957072+63090]
+	(No symbol) [0x00007FF74E8C2CC2]
+	(No symbol) [0x00007FF74E75EC65]
+	(No symbol) [0x00007FF74E763D21]
+	(No symbol) [0x00007FF74E766462]
+	(No symbol) [0x00007FF74E7E4062]
+	(No symbol) [0x00007FF74E7C6FDA]
+	(No symbol) [0x00007FF74E7E3412]
+	(No symbol) [0x00007FF74E7C6D83]
+	(No symbol) [0x00007FF74E7983A8]
+	(No symbol) [0x00007FF74E799441]
+	GetHandleVerifier [0x00007FF74ED525CD+4238285]
+	GetHandleVerifier [0x00007FF74ED8F72D+4488493]
+	GetHandleVerifier [0x00007FF74ED87A0F+4456463]
+	GetHandleVerifier [0x00007FF74EA305B6+953270]
+	(No symbol) [0x00007FF74E8CE58F]
+	(No symbol) [0x00007FF74E8C9264]
+	(No symbol) [0x00007FF74E8C939B]
+	(No symbol) [0x00007FF74E8B9BD4]
+	BaseThreadInitThunk [0x00007FFE9935257D+29]
+	RtlUserThreadStart [0x00007FFE9A64AA58+40]
+</status>
+</kw>
+<kw name="Click Button">
+<status status="NOT RUN" start="2024-04-08T21:30:58.572384" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Signup Results">
+<status status="NOT RUN" start="2024-04-08T21:30:58.572384" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T21:30:58.572384" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T21:30:54.562136" elapsed="4.010248">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74E957072+63090]
+	(No symbol) [0x00007FF74E8C2CC2]
+	(No symbol) [0x00007FF74E75EC65]
+	(No symbol) [0x00007FF74E763D21]
+	(No symbol) [0x00007FF74E766462]
+	(No symbol) [0x00007FF74E7E4062]
+	(No symbol) [0x00007FF74E7C6FDA]
+	(No symbol) [0x00007FF74E7E3412]
+	(No symbol) [0x00007FF74E7C6D83]
+	(No symbol) [0x00007FF74E7983A8]
+	(No symbol) [0x00007FF74E799441]
+	GetHandleVerifier [0x00007FF74ED525CD+4238285]
+	GetHandleVerifier [0x00007FF74ED8F72D+4488493]
+	GetHandleVerifier [0x00007FF74ED87A0F+4456463]
+	GetHandleVerifier [0x00007FF74EA305B6+953270]
+	(No symbol) [0x00007FF74E8CE58F]
+	(No symbol) [0x00007FF74E8C9264]
+	(No symbol) [0x00007FF74E8C939B]
+	(No symbol) [0x00007FF74E8B9BD4]
+	BaseThreadInitThunk [0x00007FFE9935257D+29]
+	RtlUserThreadStart [0x00007FFE9A64AA58+40]
+</status>
+</test>
+<test id="s1-t2" name="Check Invalid Name TH" line="40">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:30:58.580636" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>http://localhost:5173/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T21:30:58.580636" elapsed="1.406058"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:58.580636" elapsed="1.406058"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T21:30:59.993701" elapsed="0.287946"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:30:59.986694" elapsed="0.294953"/>
+</kw>
+<kw name="Input Invalid TH Name">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:00.281647" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
+<arg>id=nameTitleTha</arg>
+<arg>${VALID_NAME_TH_1}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T21:31:00.281647" elapsed="0.064688"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:00.346335" level="INFO">Typing text 'Supanee' into text field 'id=firstnameTha'.</msg>
+<arg>id=firstnameTha</arg>
+<arg>Supanee</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:31:00.346335" elapsed="0.211624"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:00.557959" level="INFO">Typing text 'Rungsirat' into text field 'id=lastnameTha'.</msg>
+<arg>id=lastnameTha</arg>
+<arg>Rungsirat</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:31:00.557959" elapsed="0.162334"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:00.281647" elapsed="0.438646"/>
+</kw>
+<kw name="Click Space">
+<msg time="2024-04-08T21:31:00.720293" level="FAIL">No keyword with name 'Click Space' found.</msg>
+<status status="FAIL" start="2024-04-08T21:31:00.720293" elapsed="0.000000">No keyword with name 'Click Space' found.</status>
+</kw>
+<kw name="Verify Invalid Name TH Only">
+<status status="NOT RUN" start="2024-04-08T21:31:00.720293" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T21:31:00.728469" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T21:30:58.580636" elapsed="2.147833">No keyword with name 'Click Space' found.</status>
+</test>
+<test id="s1-t3" name="Check Invalid Name EN" line="48">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:00.728469" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>http://localhost:5173/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T21:31:00.728469" elapsed="1.694899"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:00.728469" elapsed="1.694899"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T21:31:02.423368" elapsed="0.024430"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:02.423368" elapsed="0.024430"/>
+</kw>
+<kw name="Input Invalid EN Name">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:02.447798" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
+<arg>id=nameTitleEng</arg>
+<arg>${VALID_NAME_EN_1}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-04-08T21:31:02.447798" elapsed="0.065169"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:02.512967" level="INFO">Typing text 'สุภาณี' into text field 'id=firstnameEng'.</msg>
+<arg>id=firstnameEng</arg>
+<arg>สุภาณี</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:31:02.512967" elapsed="0.199213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:02.712702" level="INFO">Typing text 'รังสิรัตน์' into text field 'id=lastnameEng'.</msg>
+<arg>id=lastnameEng</arg>
+<arg>รังสิรัตน์</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:31:02.712702" elapsed="0.174310"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:02.447798" elapsed="0.439214"/>
+</kw>
+<kw name="Click Space">
+<msg time="2024-04-08T21:31:02.887012" level="FAIL">No keyword with name 'Click Space' found.</msg>
+<status status="FAIL" start="2024-04-08T21:31:02.887012" elapsed="0.000000">No keyword with name 'Click Space' found.</status>
+</kw>
+<kw name="Verify Invalid Name EN Only">
+<status status="NOT RUN" start="2024-04-08T21:31:02.895006" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T21:31:02.895562" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T21:31:00.728469" elapsed="2.167093">No keyword with name 'Click Space' found.</status>
+</test>
+<test id="s1-t4" name="Check Invalid ID Card" line="56">
+<kw name="Open Signup Form">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:02.898793" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<arg>http://localhost:5173/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-08T21:31:02.898793" elapsed="1.795369"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:02.898708" elapsed="1.795454"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T21:31:04.694162" elapsed="0.024361"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:04.694162" elapsed="0.024548"/>
+</kw>
+<kw name="Input Invalid ID Card">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-08T21:31:04.720499" level="INFO">Typing text 'S546257894125' into text field 'id=idCard'.</msg>
+<arg>id=idCard</arg>
+<arg>S546257894125</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-08T21:31:04.719979" elapsed="0.225567"/>
+</kw>
+<status status="PASS" start="2024-04-08T21:31:04.719457" elapsed="0.226089"/>
+</kw>
+<kw name="Click Space">
+<msg time="2024-04-08T21:31:04.945546" level="FAIL">No keyword with name 'Click Space' found.</msg>
+<status status="FAIL" start="2024-04-08T21:31:04.945546" elapsed="0.000000">No keyword with name 'Click Space' found.</status>
+</kw>
+<kw name="Verify Invalid ID Card Only">
+<status status="NOT RUN" start="2024-04-08T21:31:04.945546" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-04-08T21:31:04.945546" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T21:31:02.897656" elapsed="2.047890">No keyword with name 'Click Space' found.</status>
+</test>
+<status status="FAIL" start="2024-04-08T21:30:54.308016" elapsed="10.645524"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Form">Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
