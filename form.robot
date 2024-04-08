@@ -25,6 +25,7 @@ ${VALID_EMAIL_WEBMAIL}  Samind2@webmail.npru.ac.th
 *** Test Cases ***
 Successfully signed up
     Open Signup Form
+    Wait Until Page
     Input TH Information
     Input EN Information
     Input Birthday
@@ -41,7 +42,7 @@ Check Invalid Name TH
     Open Signup Form
     Wait Until Page
     Input Invalid TH Name
-    Click Space
+    Click Button
     Verify Invalid Name TH Only
     Close Browser
 
@@ -49,7 +50,7 @@ Check Invalid Name EN
     Open Signup Form
     Wait Until Page
     Input Invalid EN Name
-    Click Space
+    Click Button
     Verify Invalid Name EN Only
     Close Browser
 
@@ -57,7 +58,7 @@ Check Invalid ID Card
     Open Signup Form
     Wait Until Page
     Input Invalid ID Card
-    Click Space
+    Click Button
     Verify Invalid ID Card Only
     Close Browser
 
@@ -99,9 +100,12 @@ Input Checkbox
     Execute JavaScript    document.getElementById('accept').click()
 
 Click Button
-    Execute JavaScript    document.getElementById('submitbtn').click()
+    Wait Until Element Is Visible    id=submitbtn
+    Click Element    id=submitbtn
+    ...    # เพิ่มการรอให้ปุ่มตรงก่อนที่จะคลิก
 
 Verify Signup Results
+    Wait Until Page Contains    Submitting...
     Page Should Contain    Submitting...
 
 Input Invalid TH Name
@@ -115,7 +119,7 @@ Input Invalid EN Name
     Input Text    id=lastnameEng     รังสิรัตน์
 
 Input Invalid ID Card
-    Input Text    id=idCard    S546257894125
+    Input Text    id=idCard    Z546257894125
 
 Verify Invalid Name TH Only
     Page Should Contain    Must be in Thai only

@@ -1,136 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.8.7 on win32)" generated="2024-04-08T21:30:54.308016" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.8.7 on win32)" generated="2024-04-08T23:01:03.197123" rpa="false" schemaversion="5">
 <suite id="s1" name="Form" source="C:\Users\Microcom\Desktop\RobotForm\form.robot">
 <test id="s1-t1" name="Successfully signed up" line="26">
 <kw name="Open Signup Form">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:54.562136" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<msg time="2024-04-08T23:01:03.387176" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
 <arg>http://localhost:5173/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-08T21:30:54.562136" elapsed="2.081148"/>
+<status status="PASS" start="2024-04-08T23:01:03.387176" elapsed="1.496770"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:54.562136" elapsed="2.081148"/>
+<status status="PASS" start="2024-04-08T23:01:03.386148" elapsed="1.498917"/>
+</kw>
+<kw name="Wait Until Page">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=root</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-04-08T23:01:04.885065" elapsed="0.013503"/>
+</kw>
+<status status="PASS" start="2024-04-08T23:01:04.885065" elapsed="0.013503"/>
 </kw>
 <kw name="Input TH Information">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:56.643284" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
+<msg time="2024-04-08T23:01:04.900070" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
 <arg>id=nameTitleTha</arg>
 <arg>${VALID_NAME_TH_1}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-04-08T21:30:56.643284" elapsed="0.072551"/>
+<status status="PASS" start="2024-04-08T23:01:04.900070" elapsed="0.048675"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:56.715835" level="INFO">Typing text 'สุภาณี' into text field 'id=firstnameTha'.</msg>
+<msg time="2024-04-08T23:01:04.949743" level="INFO">Typing text 'สุภาณี' into text field 'id=firstnameTha'.</msg>
 <arg>id=firstnameTha</arg>
 <arg>${VALID_FIRSTNAME_TH}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:56.715835" elapsed="0.162632"/>
+<status status="PASS" start="2024-04-08T23:01:04.948745" elapsed="0.115204"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:56.878467" level="INFO">Typing text 'รังสิรัตน์' into text field 'id=lastnameTha'.</msg>
+<msg time="2024-04-08T23:01:05.064946" level="INFO">Typing text 'รังสิรัตน์' into text field 'id=lastnameTha'.</msg>
 <arg>id=lastnameTha</arg>
 <arg>${VALID_LASTNAME_TH}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:56.878467" elapsed="0.137367"/>
+<status status="PASS" start="2024-04-08T23:01:05.064946" elapsed="0.122848"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:56.643284" elapsed="0.372550"/>
+<status status="PASS" start="2024-04-08T23:01:04.899566" elapsed="0.288228"/>
 </kw>
 <kw name="Input EN Information">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.015834" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
+<msg time="2024-04-08T23:01:05.188791" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
 <arg>id=nameTitleEng</arg>
 <arg>${VALID_NAME_EN_1}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.015834" elapsed="0.056937"/>
+<status status="PASS" start="2024-04-08T23:01:05.187794" elapsed="0.032969"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.072953" level="INFO">Typing text 'Supanee' into text field 'id=firstnameEng'.</msg>
+<msg time="2024-04-08T23:01:05.221760" level="INFO">Typing text 'Supanee' into text field 'id=firstnameEng'.</msg>
 <arg>id=firstnameEng</arg>
 <arg>${VALID_FIRSTNAME_EN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.072953" elapsed="0.121182"/>
+<status status="PASS" start="2024-04-08T23:01:05.220763" elapsed="0.077302"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.194135" level="INFO">Typing text 'Rungsirat' into text field 'id=lastnameEng'.</msg>
+<msg time="2024-04-08T23:01:05.298065" level="INFO">Typing text 'Rungsirat' into text field 'id=lastnameEng'.</msg>
 <arg>id=lastnameEng</arg>
 <arg>${VALID_LASTNAME_EN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.194135" elapsed="0.154934"/>
+<status status="PASS" start="2024-04-08T23:01:05.298065" elapsed="0.079761"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:57.015834" elapsed="0.333235"/>
+<status status="PASS" start="2024-04-08T23:01:05.187794" elapsed="0.190032"/>
 </kw>
 <kw name="Input Birthday">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.349069" level="INFO">Selecting options from selection list 'id=birthDate' by value 27.</msg>
+<msg time="2024-04-08T23:01:05.378823" level="INFO">Selecting options from selection list 'id=birthDate' by value 27.</msg>
 <arg>id=birthDate</arg>
 <arg>${DAY}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.349069" elapsed="0.105383"/>
+<status status="PASS" start="2024-04-08T23:01:05.378823" elapsed="0.053619"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.454452" level="INFO">Selecting options from selection list 'id=birthMonth' by label มิถุนายน.</msg>
+<msg time="2024-04-08T23:01:05.432442" level="INFO">Selecting options from selection list 'id=birthMonth' by label มิถุนายน.</msg>
 <arg>id=birthMonth</arg>
 <arg>${MONTH}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.454452" elapsed="0.089846"/>
+<status status="PASS" start="2024-04-08T23:01:05.432442" elapsed="0.051226"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.544298" level="INFO">Selecting options from selection list 'id=birthYear' by label 2003.</msg>
+<msg time="2024-04-08T23:01:05.483668" level="INFO">Selecting options from selection list 'id=birthYear' by label 2003.</msg>
 <arg>id=birthYear</arg>
 <arg>${YEAR}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.544298" elapsed="0.089917"/>
+<status status="PASS" start="2024-04-08T23:01:05.483668" elapsed="0.050215"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:57.349069" elapsed="0.285146"/>
+<status status="PASS" start="2024-04-08T23:01:05.377826" elapsed="0.156057"/>
 </kw>
 <kw name="Input ID Card">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.634215" level="INFO">Typing text '2546257894125' into text field 'id=idCard'.</msg>
+<msg time="2024-04-08T23:01:05.535028" level="INFO">Typing text '2546257894125' into text field 'id=idCard'.</msg>
 <arg>id=idCard</arg>
 <arg>${VALID_ID_CARD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.634215" elapsed="0.177866"/>
+<status status="PASS" start="2024-04-08T23:01:05.535028" elapsed="0.096982"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:57.634215" elapsed="0.177866"/>
+<status status="PASS" start="2024-04-08T23:01:05.535028" elapsed="0.097979"/>
 </kw>
 <kw name="Input Password">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.812081" level="INFO">Typing text 'PasswordXd555' into text field 'id=password'.</msg>
+<msg time="2024-04-08T23:01:05.634005" level="INFO">Typing text 'PasswordXd555' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${VALID_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.812081" elapsed="0.145607"/>
+<status status="PASS" start="2024-04-08T23:01:05.633007" elapsed="0.091669"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:57.812081" elapsed="0.145607"/>
+<status status="PASS" start="2024-04-08T23:01:05.633007" elapsed="0.091669"/>
 </kw>
 <kw name="Input Phone Number">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:57.965840" level="INFO">Typing text '0986574123' into text field 'id=mobile'.</msg>
+<msg time="2024-04-08T23:01:05.725673" level="INFO">Typing text '0986574123' into text field 'id=mobile'.</msg>
 <arg>id=mobile</arg>
 <arg>${VALID_PHONE_NUMBER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:57.965840" elapsed="0.137423"/>
+<status status="PASS" start="2024-04-08T23:01:05.725673" elapsed="0.085608"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:57.965840" elapsed="0.137423"/>
+<status status="PASS" start="2024-04-08T23:01:05.724676" elapsed="0.086605"/>
 </kw>
 <kw name="Input Email">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:58.103263" level="INFO">Typing text 'Samind2@webmail.npru.ac.th' into text field 'id=email'.</msg>
+<msg time="2024-04-08T23:01:05.812281" level="INFO">Typing text 'Samind2@webmail.npru.ac.th' into text field 'id=email'.</msg>
 <arg>id=email</arg>
 <arg>${VALID_EMAIL_WEBMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:30:58.103263" elapsed="0.196869"/>
+<status status="PASS" start="2024-04-08T23:01:05.811281" elapsed="0.115739"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:58.103263" elapsed="0.196869"/>
+<status status="PASS" start="2024-04-08T23:01:05.811281" elapsed="0.115739"/>
 </kw>
 <kw name="Input Checkbox">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:58.300132" level="INFO">Executing JavaScript:
+<msg time="2024-04-08T23:01:05.928017" level="INFO">Executing JavaScript:
 document.getElementById('accept').click()
 Without any arguments.</msg>
-<msg time="2024-04-08T21:30:58.518795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-04-08T21:30:58.518795" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+<msg time="2024-04-08T23:01:06.022028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:01:06.022028" level="FAIL">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
   (Session info: chrome=123.0.6312.106)
 Stacktrace:
 	GetHandleVerifier [0x00007FF74E957072+63090]
@@ -157,7 +165,7 @@ Stacktrace:
 </msg>
 <arg>document.getElementById('accept').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="FAIL" start="2024-04-08T21:30:58.300132" elapsed="0.272252">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+<status status="FAIL" start="2024-04-08T23:01:05.928017" elapsed="0.095012">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
   (Session info: chrome=123.0.6312.106)
 Stacktrace:
 	GetHandleVerifier [0x00007FF74E957072+63090]
@@ -183,7 +191,7 @@ Stacktrace:
 	RtlUserThreadStart [0x00007FFE9A64AA58+40]
 </status>
 </kw>
-<status status="FAIL" start="2024-04-08T21:30:58.300132" elapsed="0.272252">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+<status status="FAIL" start="2024-04-08T23:01:05.927020" elapsed="0.096009">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
   (Session info: chrome=123.0.6312.106)
 Stacktrace:
 	GetHandleVerifier [0x00007FF74E957072+63090]
@@ -210,16 +218,16 @@ Stacktrace:
 </status>
 </kw>
 <kw name="Click Button">
-<status status="NOT RUN" start="2024-04-08T21:30:58.572384" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:06.023029" elapsed="0.000000"/>
 </kw>
 <kw name="Verify Signup Results">
-<status status="NOT RUN" start="2024-04-08T21:30:58.572384" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:06.024025" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-04-08T21:30:58.572384" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:06.024025" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-08T21:30:54.562136" elapsed="4.010248">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
+<status status="FAIL" start="2024-04-08T23:01:03.385151" elapsed="2.639871">JavascriptException: Message: javascript error: Cannot read properties of null (reading 'click')
   (Session info: chrome=123.0.6312.106)
 Stacktrace:
 	GetHandleVerifier [0x00007FF74E957072+63090]
@@ -245,161 +253,194 @@ Stacktrace:
 	RtlUserThreadStart [0x00007FFE9A64AA58+40]
 </status>
 </test>
-<test id="s1-t2" name="Check Invalid Name TH" line="40">
+<test id="s1-t2" name="Check Invalid Name TH" line="41">
 <kw name="Open Signup Form">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:30:58.580636" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<msg time="2024-04-08T23:01:06.028014" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
 <arg>http://localhost:5173/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-08T21:30:58.580636" elapsed="1.406058"/>
+<status status="PASS" start="2024-04-08T23:01:06.028014" elapsed="1.438526"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:58.580636" elapsed="1.406058"/>
+<status status="PASS" start="2024-04-08T23:01:06.028014" elapsed="1.438526"/>
 </kw>
 <kw name="Wait Until Page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=root</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-08T21:30:59.993701" elapsed="0.287946"/>
+<status status="PASS" start="2024-04-08T23:01:07.467532" elapsed="0.011983"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:30:59.986694" elapsed="0.294953"/>
+<status status="PASS" start="2024-04-08T23:01:07.467532" elapsed="0.011983"/>
 </kw>
 <kw name="Input Invalid TH Name">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:00.281647" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
+<msg time="2024-04-08T23:01:07.481546" level="INFO">Selecting options from selection list 'id=nameTitleTha' by value นาย.</msg>
 <arg>id=nameTitleTha</arg>
 <arg>${VALID_NAME_TH_1}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-04-08T21:31:00.281647" elapsed="0.064688"/>
+<status status="PASS" start="2024-04-08T23:01:07.480528" elapsed="0.043415"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:00.346335" level="INFO">Typing text 'Supanee' into text field 'id=firstnameTha'.</msg>
+<msg time="2024-04-08T23:01:07.523943" level="INFO">Typing text 'Supanee' into text field 'id=firstnameTha'.</msg>
 <arg>id=firstnameTha</arg>
 <arg>Supanee</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:31:00.346335" elapsed="0.211624"/>
+<status status="PASS" start="2024-04-08T23:01:07.523943" elapsed="0.133306"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:00.557959" level="INFO">Typing text 'Rungsirat' into text field 'id=lastnameTha'.</msg>
+<msg time="2024-04-08T23:01:07.657249" level="INFO">Typing text 'Rungsirat' into text field 'id=lastnameTha'.</msg>
 <arg>id=lastnameTha</arg>
 <arg>Rungsirat</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:31:00.557959" elapsed="0.162334"/>
+<status status="PASS" start="2024-04-08T23:01:07.657249" elapsed="0.119223"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:00.281647" elapsed="0.438646"/>
+<status status="PASS" start="2024-04-08T23:01:07.480528" elapsed="0.295944"/>
 </kw>
-<kw name="Click Space">
-<msg time="2024-04-08T21:31:00.720293" level="FAIL">No keyword with name 'Click Space' found.</msg>
-<status status="FAIL" start="2024-04-08T21:31:00.720293" elapsed="0.000000">No keyword with name 'Click Space' found.</status>
+<kw name="Click Button">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:01:12.919075" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:01:12.919579" level="FAIL">Element 'id=submitbtn' not visible after 5 seconds.</msg>
+<arg>id=submitbtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-08T23:01:07.777469" elapsed="5.142110">Element 'id=submitbtn' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=submitbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-08T23:01:12.919579" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T23:01:07.776472" elapsed="5.143107">Element 'id=submitbtn' not visible after 5 seconds.</status>
 </kw>
 <kw name="Verify Invalid Name TH Only">
-<status status="NOT RUN" start="2024-04-08T21:31:00.720293" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:12.920612" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-04-08T21:31:00.728469" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:12.920612" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-08T21:30:58.580636" elapsed="2.147833">No keyword with name 'Click Space' found.</status>
+<status status="FAIL" start="2024-04-08T23:01:06.027017" elapsed="6.893595">Element 'id=submitbtn' not visible after 5 seconds.</status>
 </test>
-<test id="s1-t3" name="Check Invalid Name EN" line="48">
+<test id="s1-t3" name="Check Invalid Name EN" line="49">
 <kw name="Open Signup Form">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:00.728469" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<msg time="2024-04-08T23:01:12.924275" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
 <arg>http://localhost:5173/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-08T21:31:00.728469" elapsed="1.694899"/>
+<status status="PASS" start="2024-04-08T23:01:12.923275" elapsed="1.453973"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:00.728469" elapsed="1.694899"/>
+<status status="PASS" start="2024-04-08T23:01:12.923275" elapsed="1.453973"/>
 </kw>
 <kw name="Wait Until Page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=root</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-08T21:31:02.423368" elapsed="0.024430"/>
+<status status="PASS" start="2024-04-08T23:01:14.378246" elapsed="0.021650"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:02.423368" elapsed="0.024430"/>
+<status status="PASS" start="2024-04-08T23:01:14.378246" elapsed="0.021650"/>
 </kw>
 <kw name="Input Invalid EN Name">
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:02.447798" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
+<msg time="2024-04-08T23:01:14.400942" level="INFO">Selecting options from selection list 'id=nameTitleEng' by value Mr..</msg>
 <arg>id=nameTitleEng</arg>
 <arg>${VALID_NAME_EN_1}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-04-08T21:31:02.447798" elapsed="0.065169"/>
+<status status="PASS" start="2024-04-08T23:01:14.400942" elapsed="0.051672"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:02.512967" level="INFO">Typing text 'สุภาณี' into text field 'id=firstnameEng'.</msg>
+<msg time="2024-04-08T23:01:14.452614" level="INFO">Typing text 'สุภาณี' into text field 'id=firstnameEng'.</msg>
 <arg>id=firstnameEng</arg>
 <arg>สุภาณี</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:31:02.512967" elapsed="0.199213"/>
+<status status="PASS" start="2024-04-08T23:01:14.452614" elapsed="0.154625"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:02.712702" level="INFO">Typing text 'รังสิรัตน์' into text field 'id=lastnameEng'.</msg>
+<msg time="2024-04-08T23:01:14.608723" level="INFO">Typing text 'รังสิรัตน์' into text field 'id=lastnameEng'.</msg>
 <arg>id=lastnameEng</arg>
 <arg>รังสิรัตน์</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:31:02.712702" elapsed="0.174310"/>
+<status status="PASS" start="2024-04-08T23:01:14.607239" elapsed="0.136740"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:02.447798" elapsed="0.439214"/>
+<status status="PASS" start="2024-04-08T23:01:14.399896" elapsed="0.344083"/>
 </kw>
-<kw name="Click Space">
-<msg time="2024-04-08T21:31:02.887012" level="FAIL">No keyword with name 'Click Space' found.</msg>
-<status status="FAIL" start="2024-04-08T21:31:02.887012" elapsed="0.000000">No keyword with name 'Click Space' found.</status>
+<kw name="Click Button">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:01:19.974478" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:01:19.975476" level="FAIL">Element 'id=submitbtn' not visible after 5 seconds.</msg>
+<arg>id=submitbtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-08T23:01:14.744976" elapsed="5.230500">Element 'id=submitbtn' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=submitbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-08T23:01:19.975476" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T23:01:14.744976" elapsed="5.230500">Element 'id=submitbtn' not visible after 5 seconds.</status>
 </kw>
 <kw name="Verify Invalid Name EN Only">
-<status status="NOT RUN" start="2024-04-08T21:31:02.895006" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:19.976481" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-04-08T21:31:02.895562" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:19.976481" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-08T21:31:00.728469" elapsed="2.167093">No keyword with name 'Click Space' found.</status>
+<status status="FAIL" start="2024-04-08T23:01:12.923275" elapsed="7.054196">Element 'id=submitbtn' not visible after 5 seconds.</status>
 </test>
-<test id="s1-t4" name="Check Invalid ID Card" line="56">
+<test id="s1-t4" name="Check Invalid ID Card" line="57">
 <kw name="Open Signup Form">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:02.898793" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
+<msg time="2024-04-08T23:01:19.978468" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:5173/'.</msg>
 <arg>http://localhost:5173/</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-08T21:31:02.898793" elapsed="1.795369"/>
+<status status="PASS" start="2024-04-08T23:01:19.978468" elapsed="1.441175"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:02.898708" elapsed="1.795454"/>
+<status status="PASS" start="2024-04-08T23:01:19.978468" elapsed="1.441175"/>
 </kw>
 <kw name="Wait Until Page">
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>id=root</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-04-08T21:31:04.694162" elapsed="0.024361"/>
+<status status="PASS" start="2024-04-08T23:01:21.420687" elapsed="0.010685"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:04.694162" elapsed="0.024548"/>
+<status status="PASS" start="2024-04-08T23:01:21.419643" elapsed="0.011729"/>
 </kw>
 <kw name="Input Invalid ID Card">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-08T21:31:04.720499" level="INFO">Typing text 'S546257894125' into text field 'id=idCard'.</msg>
+<msg time="2024-04-08T23:01:21.432371" level="INFO">Typing text 'Z546257894125' into text field 'id=idCard'.</msg>
 <arg>id=idCard</arg>
-<arg>S546257894125</arg>
+<arg>Z546257894125</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-08T21:31:04.719979" elapsed="0.225567"/>
+<status status="PASS" start="2024-04-08T23:01:21.432371" elapsed="0.160261"/>
 </kw>
-<status status="PASS" start="2024-04-08T21:31:04.719457" elapsed="0.226089"/>
+<status status="PASS" start="2024-04-08T23:01:21.432371" elapsed="0.160261"/>
 </kw>
-<kw name="Click Space">
-<msg time="2024-04-08T21:31:04.945546" level="FAIL">No keyword with name 'Click Space' found.</msg>
-<status status="FAIL" start="2024-04-08T21:31:04.945546" elapsed="0.000000">No keyword with name 'Click Space' found.</status>
+<kw name="Click Button">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-04-08T23:01:26.774949" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-08T23:01:26.774949" level="FAIL">Element 'id=submitbtn' not visible after 5 seconds.</msg>
+<arg>id=submitbtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-08T23:01:21.593628" elapsed="5.181321">Element 'id=submitbtn' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=submitbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-08T23:01:26.775949" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-08T23:01:21.593628" elapsed="5.182321">Element 'id=submitbtn' not visible after 5 seconds.</status>
 </kw>
 <kw name="Verify Invalid ID Card Only">
-<status status="NOT RUN" start="2024-04-08T21:31:04.945546" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:26.776613" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-04-08T21:31:04.945546" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-08T23:01:26.777181" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-08T21:31:02.897656" elapsed="2.047890">No keyword with name 'Click Space' found.</status>
+<status status="FAIL" start="2024-04-08T23:01:19.977471" elapsed="6.800150">Element 'id=submitbtn' not visible after 5 seconds.</status>
 </test>
-<status status="FAIL" start="2024-04-08T21:30:54.308016" elapsed="10.645524"/>
+<status status="FAIL" start="2024-04-08T23:01:03.198087" elapsed="23.580415"/>
 </suite>
 <statistics>
 <total>
